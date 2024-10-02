@@ -2,6 +2,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 a {
@@ -11,4 +15,18 @@ a {
 img,
 video {
   display: block;
+}
+
+@import "bootstrap/scss/bootstrap-grid";
+
+.row + .row {
+  margin-top: 16px;
+}
+
+.row > .col,
+.row > [class^="col-"] {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: rgba(86, 61, 124, 0.15);
+  border: 1px solid rgba(86, 61, 124, 0.2);
 }
